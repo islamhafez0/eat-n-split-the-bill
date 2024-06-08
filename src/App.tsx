@@ -18,6 +18,7 @@ export const App = () => {
   const [billValue, setBillValue] = useState<string>("");
   const [isPayedByUser, setIsPayedByUser] = useState<string>("");
   const [whoIsPaying, setWhoIsPaying] = useState<string>("user");
+
   const paidByFriend =
     billValue && isPayedByUser ? +billValue - +isPayedByUser : "";
 
